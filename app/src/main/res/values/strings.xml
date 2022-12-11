@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="black_sparrow_charles_bukowski">Black Sparrow by Charles Bukowski</string>
+    <string name="lake_and_village_herman_hesse">Lake and Village by Herman Hesse</string>
+    <string name="on_the_road_jack_kerouac">On the Road by Jack Kerouac</string>
+    <string name="typewriter_genter_grass">Typewriter by Genter Grass</string>
+    <string name="the_declaration_of_independence_1786_john_trumbull">The Declaration of Independence by John Trumbull</string>
+</resources>
