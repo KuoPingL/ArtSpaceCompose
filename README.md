@@ -1,10 +1,7 @@
 # Art Space using Compose
 This is an exercise from Android [Official Course](https://developer.android.com/codelabs/basic-android-kotlin-compose-art-space?authuser=1&continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-3%3Fauthuser%3D1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-art-space#3) for Jetpack Compose.
 
-<p float="center">
-  <img src="/artspace_landscape.png" style="width:50%" />
-  <img src="/artspace_portrait.png" style="width:50%" />
-</p>
+<img src="/artspace_landscape.png" style="width:50%" /><img src="/artspace_portrait.png" style="width:50%" />
 
 ## Obstacles
 Even though this is a beginner exercise, it has proven to be quite challenging. 
@@ -12,14 +9,18 @@ Here are some of the main obstacles that was faced and conquered during this exe
 
 1. Displaying a **Snackbar**
     For people with experience with traditional Android, you should know that a Snackbar is created as follows :
+
     ```kotlin
     Snackbar.make(contentView, "I’m Snackbar", Snackbar.LENGTH_LONG).show();
     ```
     which is just the same as Toast. 
     
     <br>
-    However, in Compose, the creation of Snackbar requires the usage of a CoroutineScope. The 
-    composable displaying the Snackbar must be wrapped within a **Scaffold** so that a **ScaffoldState** 
+   
+    However, in Compose, the creation of Snackbar requires the usage of a CoroutineScope.
+    <br>
+
+    The composable displaying the Snackbar must be wrapped within a **Scaffold** so that a **ScaffoldState** 
     can be passed to it, allowing it to trigger Snackbar by calling :
     
     ```kotlin
@@ -71,6 +72,7 @@ Here are some of the main obstacles that was faced and conquered during this exe
    Instead, the two buttons are to be separated on each end with a wrap content width, but the shorter one needs to be the same as as the longer one.
 
    <br>
+   
    In order to solve it, **SubcomposeLayout** is used.
    It trigger subcompose the actual content during the measuring stage, allowing us to get the final size of the composable.
    Based on the measured size, we can make the target composable the same size as the measured size.
