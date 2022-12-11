@@ -3,7 +3,7 @@ This is an exercise from Android [Official Course](https://developer.android.com
 
 <p float="center">
   <img src="/artspace_landscape.png" style="width:50%" />
-  <img src="/artspace_portrait.png" width="width:50%" />
+  <img src="/artspace_portrait.png" style="width:50%" />
 </p>
 
 ## Obstacles
