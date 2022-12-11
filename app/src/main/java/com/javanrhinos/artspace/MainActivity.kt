@@ -151,11 +151,11 @@ fun ArtSpace() {
                                     offsetX = it.x - eventX
 
                                     if (offsetX >= width / 5) {
-                                        onNext()
+                                        onPrevious()
                                         shouldConsume = false
                                         offsetX = 0f
                                     } else if (abs(offsetX) >= width / 5) {
-                                        onPrevious()
+                                        onNext()
                                         shouldConsume = false
                                         offsetX = 0f
                                     }
